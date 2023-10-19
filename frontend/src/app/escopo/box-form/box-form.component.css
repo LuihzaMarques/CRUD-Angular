@@ -1,57 +1,111 @@
-.mainContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #7e7e7e;
-}
+.mainContainer{
 
-.mainContainer .left {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     width: 50%;
-    text-align:right;
-}
-
-.mainContainer .left img {
-    width: 50%;
-    max-width: 300px;
-}
-
-.mainContainer .right {
-    width: 50%;
-    text-align: center;
-}
-
-.mainContainer .right .formBox >h3 {
-    font-weight: 800;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 20px;
-}
-
-.formBox {
-    max-width: 900px;
-    padding: 60px;
+    height: 400px;
     background: #fff;
-    border: 100px;
-    border-radius: 5px;
+    margin:  0 auto;
+    border: 2px solid #fff;
+    box-shadow: 0 15px 40px rgb(0,0,0,.5);
+   
+}
+
+
+.img{
+    width: 100px;
+    height: 100px;
+    transform: scale(0.5);
+    margin: 10px;
+}
+
+
+.mainContainer .left{
+    float: left;
+    width: 50%;
+    height: 400px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+.mainContainer .right{
+    float: right;
+    width: 50%;
+    height: 400px;
+    box-sizing: border-box;
+}
+
+.mainContainer .right >h3{
     text-align: center;
+    font-weight: 800;
+    margin-top: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.formBox label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-.formBox input {
+.formBox{
     width: 100%;
-    padding: 10px;
-    margin: 5px 10px;
-    border: 1px solid #ccc;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    height: 200px;
+    background: #fff;
+}
+
+.formBox input::placeholder,
+textarea::placeholder{
+    color: black;
+}
+
+.formBox p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 5px 15px;
+    padding: 0;
+    font-size: 12px;
+}
+
+.formBox input{
+    width: 100%;
+    margin-bottom: 20px;
     border-radius: 5px;
-    outline: none;
-    font-size: 16px;
+    border: none;
+    padding: 10px;
+    background-color:#cecece;
+}
+
+.formBox input[type="submit"]{
+    border:none;
+    outline:none;
+    height: 40px;
+    color:#fff;
+    background: #262626;
+    cursor: pointer;
+}
+
+.formBox input[type="submit"]:hover{
+    background: #037527;
+}
+
+.formBox a {
+    color: #262626;
+    font-size: 12px;
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #new {
     margin-top: 10px;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #6b8e23;
 }
+
+#new:hover{
+    background-color: #037527;
+}
+
