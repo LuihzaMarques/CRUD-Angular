@@ -1,0 +1,33 @@
+.sidebar-right {
+    width: 10rem;
+    margin-top: 4rem;
+    background-color: #333;
+    color: #fff;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0; /* sidebar à direita */
+  }
+  
+  ul {
+    text-align: center;
+    list-style: none;
+    padding: 1rem;
+    margin-top: 1px;
+ 
+  }
+  
+  li {
+    margin: 50px 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  a:hover {
+    color: #219c2b;
+    
+  }
+  

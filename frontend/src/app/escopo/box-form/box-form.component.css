@@ -75,18 +75,23 @@ textarea::placeholder{
     background-color:#cecece;
 }
 
-.formBox input[type="submit"]{
+#btn-entre {
     border:none;
     outline:none;
     height: 40px;
     color:#fff;
     background: #262626;
     cursor: pointer;
+    padding: 10px;
+    width: 100%; 
+    margin: 0 auto;
+  
 }
 
-.formBox input[type="submit"]:hover{
-    background: #037527;
+#btn-entre:hover {
+    background-color: #037527;
 }
+
 
 .formBox a {
     color: #262626;
