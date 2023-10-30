@@ -8,11 +8,21 @@ import { HeaderComponent } from './escopo/header/header.component';
 import { FooterComponent } from './escopo/footer/footer.component';
 import { LoginComponent } from './pages/login/login.component';
 import { BoxFormComponent } from './escopo/box-form/box-form.component';
+
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
+
+
+
 import { SidebarComponent } from './escopo/sidebar/sidebar.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { UserComponent } from './pages/user/user.component';
 import { EmpresaComponent } from './pages/empresa/empresa.component';
+import { MidiaComponent } from './escopo/midia/midia.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +36,17 @@ import { EmpresaComponent } from './pages/empresa/empresa.component';
     DashboardComponent,
     UserComponent,
     EmpresaComponent,
+    MidiaComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatToolbarModule
+    MatToolbarModule,
+    BrowserAnimationsModule,
+    MatSidenavModule,  
+    MatIconModule,
+    MatButtonModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

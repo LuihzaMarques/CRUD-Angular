@@ -1,9 +1,41 @@
-<div class="sidebar-right">
-    <ul>
-      <li><a routerLink="/app-dashboard">DASHBOARD</a></li>
-      <li><a routerLink="/app-user">USER</a></li>
-      <li><a routerLink="/app-empresa">EMPRESA</a></li>
-      <li><a routerLink="/app-user">SAIR</a></li>
-    </ul>
-  </div>
-  
+<mat-sidenav-container>
+    <mat-sidenav mode="side" opened>
+
+        <img class="avatar" src="assets/person.png">
+        <h4 class="user-name"> user name</h4>
+
+        <mat-divider></mat-divider>
+
+        <button mat-button class="menu-button">
+            <mat-icon>home</mat-icon>
+            <span class="material-symbols-outlined">Home</span>
+        </button>
+
+        <button mat-button class="menu-button">
+            <mat-icon>dashboard</mat-icon>
+            <span>Dashboard</span>
+        </button>
+
+        <button mat-button class="menu-button">
+            <mat-icon>person</mat-icon>
+            <span>User</span>
+        </button>
+
+        <button mat-button class="menu-button">
+            <mat-icon>business</mat-icon>
+            <span>Empresa</span>
+        </button>
+
+        
+        <mat-divider></mat-divider>
+
+        <button mat-button class="menu-button">
+            <mat-icon>close</mat-icon>
+            <span>Sair</span>
+        </button>
+
+    </mat-sidenav>
+    
+    <app-midia></app-midia>
+    
+</mat-sidenav-container>
